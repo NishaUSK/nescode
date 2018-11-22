@@ -1,0 +1,19 @@
+# File types #
+##############
+*.pyc
+*.swo
+*.swp
+*.swn
+*.sqlite3
+
+# Directories #
+###############
+logs/
+
+# OS generated files #
+######################
+.DS_Store?
+ehthumbs.db
+Icon?
+Thumbs.db
+*~
