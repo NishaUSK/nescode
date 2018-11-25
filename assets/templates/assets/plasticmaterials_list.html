@@ -1,0 +1,45 @@
+{% extends 'assets/base.html' %}
+
+{% block content %}
+    {% for plasticmaterials in plasticmaterialss %}
+    <div class="Plasticmaterials">
+      <div class="date">
+            <p>launch: {{ Plasticmaterials.launch_date }}</p>
+      </div>
+            <h4><a href="{% url 'plasticmaterials_detail' pk=plasticmaterials.pk %}">{{ Plasticmaterials.name }}</a></h4>
+            <p>{{ Plasticmaterials.quality|linebreaksbr }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}
+
+<!-- <h4>Plasticmaterials</h4>
+    <table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Quality</th>
+      <th scope="col">Prize</th>
+      <th scope="col">Launchdate</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Plastic Doors</th>
+      <td>good quality</td>
+      <td>1500</td>
+      <td>2018-11-21</td>
+    </tr>
+    <tr>
+      <th scope="row">Box</th>
+      <td>Fiber</td>
+      <td>300</td>
+      <td>2018-11-21</td>
+    </tr>
+    <tr>
+      <th scope="row">Bottle</th>
+      <td>Wild & Free Sipper Bottle</td>
+      <td>750</td>
+      <td>2018-11-21</td>
+    </tr>
+      </tbody>
+</table> -->

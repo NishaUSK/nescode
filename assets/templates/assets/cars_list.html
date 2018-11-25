@@ -1,0 +1,51 @@
+{% extends 'assets/base.html' %}
+
+{% block content %}
+    {% for cars in carss %}
+    <div class="Cars">
+      <div class="date">
+            <p>launch: {{ Cars.launch_date }}</p>
+      </div>
+            <h4><a href="{% url 'cars_detail' pk=cars.pk %}">{{ Cars.name }}</a></h4>
+            <p>{{ Cars.model|linebreaksbr }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}
+
+<!-- <h4>cars</h4>
+    <table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Model</th>
+      <th scope="col">Prize</th>
+      <th scope="col">Launchdate</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Sport Utility</th>
+      <td>Volkswagen Atlas</td>
+      <td>950000</td>
+      <td>2018-11-21</td>
+    </tr>
+    <tr>
+      <th scope="row">Sedan</th>
+      <td>Tata Tigor EV</td>
+      <td>500000</td>
+      <td>2018-11-21</td>
+    </tr>
+    <tr>
+      <th scope="row">Maruti Suzuki</th>
+      <td>Suzuki Ertiga</td>
+      <td>253000</td>
+      <td>2018-11-21</td>
+    </tr>
+    <tr>
+      <th scope="row">BMW</th>
+      <td>BMW 5 Series</td>
+      <td>340000</td>
+      <td>2018-11-21</td>
+    </tr>
+  </tbody>
+</table> -->

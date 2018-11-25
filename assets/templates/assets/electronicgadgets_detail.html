@@ -1,0 +1,14 @@
+
+{% extends 'assets/base.html' %}
+
+{% block content %}
+    <div class="Electronicgadgets">
+        {% if electronicgadgets.launch_date %}
+            <div class="date">
+                {{ electronicgadgets.launch_date }}
+            </div>
+        {% endif %}
+        <h4>{{ electronicgadgets.name }}</h4>
+        <p>{{ electronicgadgets.model|linebreaksbr }}</p>
+    </div>
+{% endblock %}

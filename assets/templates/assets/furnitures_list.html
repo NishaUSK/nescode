@@ -1,0 +1,38 @@
+{% extends 'assets/base.html' %}
+
+{% block content %}
+    {% for furnitures in furnituress %}
+    <div class="Furnitures">
+                  <h4><a href="{% url 'furnitures_detail' pk=furnitures.pk %}">{{ Furnitures.name }}</a></h4>
+            <p>{{ Furnitures.model|linebreaksbr }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}
+
+<!-- <h4>Furnitures</h4>
+    <table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Model</th>
+      <th scope="col">Prize</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Dining table</th>
+      <td>Round</td>
+      <td>7000</td>
+    </tr>
+    <tr>
+      <th scope="row">SofaSet</th>
+      <td>Curved</td>
+      <td>10000</td>
+    </tr>
+    <tr>
+      <th scope="row">Table</th>
+      <td>Normal</td>
+      <td>2000</td>
+    </tr>
+      </tbody>
+</table> -->

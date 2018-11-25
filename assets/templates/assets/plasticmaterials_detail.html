@@ -1,0 +1,13 @@
+{% extends 'assets/base.html' %}
+
+{% block content %}
+    <div class="Plasticmaterials">
+        {% if Plasticmaterials.launch_date %}
+            <div class="date">
+                {{ Plasticmaterials.launch_date }}
+            </div>
+        {% endif %}
+        <h4>{{ Plasticmaterials.name }}</h4>
+        <p>{{ Plasticmaterials.quality|linebreaksbr }}</p>
+    </div>
+{% endblock %}

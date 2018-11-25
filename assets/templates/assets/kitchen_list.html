@@ -1,0 +1,36 @@
+{% extends 'assets/base.html' %}
+
+{% block content %}
+    {% for kitchen in kitchens %}
+    <div class="Kitchen">
+      <div class="date">
+            <p>launch: {{ Kitchen.manufactured_date }}</p>
+      </div>
+            <h4><a href="{% url 'kitchen_detail' pk=kitchen.pk %}">{{ Kitchen.name }}</a></h4>
+            <p>{{ Kitchen.ingrediants|linebreaksbr }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}
+
+<!-- <h4>Kitchen</h4>
+    <table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Ingrediants</th>
+      <th scope="col">Manufactured date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Kitchen materials</th>
+      <td>Gas, Cooking items, water etc.......</td>
+      <td>2018-11-21</td>
+    </tr>
+    <tr>
+      <th scope="row">FrideRice</th>
+      <td>All vegetables, Chilli, salt, gingergarlic past etc......</td>
+      <td>2018-11-21</td>
+    </tr>
+      </tbody>
+</table> -->

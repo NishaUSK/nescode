@@ -1,0 +1,13 @@
+{% extends 'assets/base.html' %}
+
+{% block content %}
+    <div class="Kitchen">
+        {% if Kitchen.manufactured_date %}
+            <div class="date">
+                {{ Kitchen.manufactured_date }}
+            </div>
+        {% endif %}
+        <h4>{{ Kitchen.name }}</h4>
+        <p>{{ Kitchen.ingrediants|linebreaksbr }}</p>
+    </div>
+{% endblock %}
