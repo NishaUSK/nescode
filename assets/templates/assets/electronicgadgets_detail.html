@@ -4,13 +4,13 @@
 {% block content %}
 <table class="table table-bordered">
     <div class="container">
-        {% if electronicgadgets.launch_date %}
+        {% if Electronicgadgets.launch_date %}
             <div class="date">
-                {{ electronicgadgets.launch_date }}
+                {{ Electronicgadgets.launch_date }}
             </div>
         {% endif %}
-        <h4>{{ electronicgadgets.name }}</h4>
-        <p>{{ electronicgadgets.model|linebreaksbr }}</p>
+        <h4>{{ Electronicgadgets.name }}</h4>
+        <p>{{ Electronicgadgets.model|linebreaksbr }}</p>
     </div>
 </table>
 {% endblock %}
