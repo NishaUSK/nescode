@@ -2,7 +2,7 @@
 
 {% block content %}
     {% for furnitures in furnituress %}
-    <div class="Furnitures">
+    <div class="container">
                   <h4><a href="{% url 'furnitures_detail' pk=furnitures.pk %}">{{ Furnitures.name }}</a></h4>
             <p>{{ Furnitures.model|linebreaksbr }}</p>
         </div>
