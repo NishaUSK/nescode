@@ -1,6 +1,5 @@
 {% load static %}
 
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -21,15 +20,21 @@
 <div class="page-header">
   <h3 class="text-center">Assets</h3>
 </div>
-</div>
+
+    <table class="table table-bordered">
     {% block content %}
-{% endblock %}
+
+
+    {% endblock %}
+
+</table>
+</div>
 
     <!-- Footer Links -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
-<script src="../../assets/js/vendor/popper.min.js"></script>
-<script src="../../dist/js/bootstrap.min.js"></script>
+<!-- <script src="js/vendor/popper.min.js" href="{% static 'css/assets.css' %}"></script>
+<script src="js/bootstrap.min.js" href="{% static 'css/assets.css' %}"></script> -->
 
 <!-- Just to make our placeholder images work. Don't actually-->
   </body>

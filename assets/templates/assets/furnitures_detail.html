@@ -1,6 +1,7 @@
 {% extends 'assets/base.html' %}
 
 {% block content %}
+<table class="table table-bordered">
     <div class="container">
         <!-- {% if Kitchen.manufactured_date %}
             <div class="date">
@@ -10,4 +11,5 @@
         <h4>{{ Furnitures.name }}</h4>
         <p>{{ Furnitures.model|linebreaksbr }}</p>
     </div>
+  </table>
 {% endblock %}

@@ -2,6 +2,7 @@
 {% extends 'assets/base.html' %}
 
 {% block content %}
+<table class="table table-bordered">
     <div class="container">
         {% if electronicgadgets.launch_date %}
             <div class="date">
@@ -11,4 +12,5 @@
         <h4>{{ electronicgadgets.name }}</h4>
         <p>{{ electronicgadgets.model|linebreaksbr }}</p>
     </div>
+</table>
 {% endblock %}

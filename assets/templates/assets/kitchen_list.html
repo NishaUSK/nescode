@@ -1,6 +1,7 @@
 {% extends 'assets/base.html' %}
 
 {% block content %}
+<table class="table table-bordered">
     {% for kitchen in kitchens %}
     <div class="container">
       <div class="date">
@@ -10,6 +11,7 @@
             <p>{{ Kitchen.ingrediants|linebreaksbr }}</p>
         </div>
     {% endfor %}
+  </table>
 {% endblock %}
 
 <!-- <h4>Kitchen</h4>

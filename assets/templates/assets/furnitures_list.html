@@ -1,12 +1,14 @@
 {% extends 'assets/base.html' %}
 
 {% block content %}
+<table class="table table-bordered">
     {% for furnitures in furnituress %}
     <div class="container">
                   <h4><a href="{% url 'furnitures_detail' pk=furnitures.pk %}">{{ Furnitures.name }}</a></h4>
             <p>{{ Furnitures.model|linebreaksbr }}</p>
         </div>
     {% endfor %}
+  </table>
 {% endblock %}
 
 <!-- <h4>Furnitures</h4>

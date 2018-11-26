@@ -1,6 +1,7 @@
 {% extends 'assets/base.html' %}
 
 {% block content %}
+<table class="table table-bordered">
     <div class="container">
         {% if Plasticmaterials.launch_date %}
             <div class="date">
@@ -10,4 +11,5 @@
         <h4>{{ Plasticmaterials.name }}</h4>
         <p>{{ Plasticmaterials.quality|linebreaksbr }}</p>
     </div>
+  </table>
 {% endblock %}

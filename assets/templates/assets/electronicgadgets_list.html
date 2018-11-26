@@ -1,6 +1,8 @@
 {% extends 'assets/base.html' %}
 
 {% block content %}
+
+<table class="table table-bordered">
     {% for electronicgadgets in electronicgadgetss %}
     <div class="container">
       <div class="date">
@@ -10,4 +12,6 @@
             <p>{{ Electronicgadgets.model|linebreaksbr }}</p>
         </div>
     {% endfor %}
+</table>
+
 {% endblock %}
