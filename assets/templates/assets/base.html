@@ -23,11 +23,17 @@
 
     <table class="table table-bordered">
     {% block content %}
-      <a href="{% url 'electronicgadgets' %}">Go to Electronicgadgets</a>
-      <a href="{% url 'kitchen' %}">Go to Kitchen</a>
-      <a href="{% url 'furnitures' %}">Go to Furnitures</a>
-      <a href="{% url 'plasticmaterials' %}">Go to Plasticmaterials</a>
-      <a href="{% url 'cars' %}">Go to Cars</a>
+      <a href="{% url 'electronicgadgets_list' %}">Go to Electronicgadgets</a>
+      <a href="{% url 'kitchen_list' %}">Go to Kitchen</a>
+      <a href="{% url 'furnitures_list' %}">Go to Furnitures</a>
+      <a href="{% url 'plasticmaterials_list' %}">Go to Plasticmaterials</a>
+      <a href="{% url 'cars_list' %}">Go to Cars</a>
+
+      <a href="{% url 'electronicgadgets_detail' %}">Go to Electronicgadgets</a>
+      <a href="{% url 'kitchen_detail' %}">Go to Kitchen</a>
+      <a href="{% url 'furnitures_detail' %}">Go to Furnitures</a>
+      <a href="{% url 'plasticmaterials_detail' %}">Go to Plasticmaterials</a>
+      <a href="{% url 'cars_detail' %}">Go to Cars</a>
 
     {% endblock %}
 
